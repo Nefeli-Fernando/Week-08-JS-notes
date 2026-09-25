@@ -73,12 +73,30 @@ console.log(Student[1].name);
 console.log(Student[2].address);
 
 console.log(document); //a detailed description of the parameters/behaviours used in ur html doc
-document.write("<p><b>HII ICET<b></p>");
-document.write("<p>HIIIIIIIIIIIIIIIIIIIII</p>")
+//document.write("<p><b>HII ICET<b></p>");
+//document.write("<p>HIIIIIIIIIIIIIIIIIIIII</p>")
 
-let title = document.getElementById("title")
-console.log(title)
-title.innerText = "EUREKA"
+//let title = document.getElementById("title")
+//console.log(title)
+//title.innerText = "EUREKA"
 
+let number = 0;
+function btnAddOnAction(){
+    number++;
+    counter.innerText = "Number Counter - " + number;
+}
+
+function btnMinusOnAction(){
+    number--;
+    validateMinimum();
+    counter.innerText = "Number Counter - " + number;
+}
+
+function validateMinimum(){
+    if(number <0){
+        number = 0;
+        counter.innerText = "Number Counter - 0" + number;
+    }
+}
 
 ///////////////DOM MANIPULATION/////DOcument Object MANIPULATION/////
