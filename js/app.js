@@ -73,5 +73,12 @@ console.log(Student[1].name);
 console.log(Student[2].address);
 
 console.log(document); //a detailed description of the parameters/behaviours used in ur html doc
+document.write("<p><b>HII ICET<b></p>");
+document.write("<p>HIIIIIIIIIIIIIIIIIIIII</p>")
 
-///////////////DOM MANIPULATION/////DOcument Object Model/////
+let title = document.getElementById("title")
+console.log(title)
+title.innerText = "EUREKA"
+
+
+///////////////DOM MANIPULATION/////DOcument Object MANIPULATION/////
